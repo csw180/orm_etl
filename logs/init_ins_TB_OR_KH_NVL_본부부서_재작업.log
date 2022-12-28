@@ -1,0 +1,8 @@
+old  30:   WHERE   STD_DT = '&2';
+new  30:   WHERE   STD_DT = '20221201';
+old  34:   SELECT '&3'
+new  34:   SELECT 'H-KRI-139'
+KRI ID : H-KRI-139
+
+PL/SQL procedure successfully completed.
+

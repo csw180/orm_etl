@@ -1,0 +1,16 @@
+▶opesql.bat▶====================================================
+▶opesql.bat▶작업시작일시  : 2022-10-21 09:44:51
+실행기준일 : 20221021
+DW중앙회인사테이블 데이터 존재, 조직 배치 시작
+TB_OR_OM_ORGZ 테이블 건수 0건 운영리스크 조직 전체 재생성
+151rows inserted(조직)
+팀코드 BRC 적재 시작
+DECLARE
+*
+ERROR at line 1:
+ORA-00001: unique constraint (OPEOWN.PK_OR_OM_ORGZ) violated
+ORA-06512: at line 161
+
+
+▶opesql.bat▶작업종료일시  : 2022-10-21 09:44:57
+▶opesql.bat▶====================================================

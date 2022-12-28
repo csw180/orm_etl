@@ -1,0 +1,14 @@
+LOAD DATA
+TRUNCATE
+INTO TABLE TEMP_OPE_KRI_채널전략팀02
+FIELDS TERMINATED BY '|'
+TRAILING NULLCOLS
+(  STD_DT
+  ,BRNO
+  ,BR_NM                           "TRIM(:BR_NM)"
+  ,CNTT_DTT_CD
+  ,CNTT_NO
+  ,CNTT_NM                         "TRIM(:CNTT_NM)"
+  ,CNTT_DT
+  ,CNTT_AMT
+)

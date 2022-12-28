@@ -1,0 +1,14 @@
+old  17:	 ,'&2'
+new  17:	 ,'202211'
+TB_OPE_DT_BC :기준일 : 20221208
+P_RUNDATE :기준일 : 20230116
+기준일 일치 월말및평가대상데이터생성 생성을 시작합니다.
+286건 월말 데이터(KRI) 생성
+291건 월말 데이터(BRC) 생성
+285건 (RKISLT) 생성
+286건 LMT_CHG_CNTN NULL 업데이트
+1건 스케쥴 플랜 테이블 평가중으로 업데이트
+1건 스케쥴테이블 평가중으로 업데이트
+
+PL/SQL procedure successfully completed.
+

@@ -1,0 +1,66 @@
+#! /bin/ksh
+. /opeapp/.profile
+
+RETURNCODE=0
+SQL_FILE="$1.sql"
+LOG_NM=`echo $1 | rev | cut -d"/" -f1 |rev`
+PARAM1="$2"
+
+if  [ ${#PARAM1} != 0 ]
+then
+        LOG_NM="${LOG_NM}_${PARAM1}"
+fi
+
+#echo "exe:SQL_FILE=$SQL_FILE"
+#echo "exe:LOG_NM=$LOG_NM"
+#echo "exe:PARAM1=[${PARAM1}]"
+
+if [ ! -e $SQL_FILE ]
+then
+    /usr/bin/echo "$SQL_FILE 이 존재 하지 않습니다."
+    exit 1
+fi
+
+# 작업수행 전 기존 log파일 삭제
+rm -f ${OPE_LOG_PATH}/${LOG_NM}.log
+
+/opeapp/opesql.bat $1 $2
+
+RET=$?
+
+# log파일이 없으면 오류
+if [ -e ${OPE_LOG_PATH}/${LOG_NM}.log ]
+then
+    let "RETURNCODE=0"
+else
+    let "RETURNCODE=2"
+fi
+
+# SQL 오류 확인
+ORA_ERR=`grep -c '^ORA-[0-9][0-9][0-9][0-9]' ${OPE_LOG_PATH}/${LOG_NM}.log`
+
+# SQL 오류 외 오류 확인
+SP_ERR=`grep -c '^SP2-[0-9][0-9][0-9][0-9]' ${OPE_LOG_PATH}/${LOG_NM}.log`
+
+# 모든 오류가 없는 경우 정상
+if [ $RET -eq 0 -a $ORA_ERR -eq 0 -a $SP_ERR -eq 0 ]
+then
+    RETURNCODE=0
+else
+    RETURNCODE=1
+    # 디버깅 시 오류 메시지 확인
+    echo "  !!!!! opesql.bat 오류발생.... LOG(${OPE_LOG_PATH}/${LOG_NM}.log) "
+    cat ${OPE_LOG_PATH}/${LOG_NM}.log
+fi
+
+if [ $RETURNCODE -eq 1 ]
+then
+    /usr/bin/echo "exit status : Execution Error !!!\n"
+    exit 1
+elif [ $RETURNCODE -eq 2 ]
+then
+    /usr/bin/echo "exit status : Unable to start database server !!!\n"
+else
+    /usr/bin/echo "exit condition : Succeed !!!\n"
+    exit 0;
+fi

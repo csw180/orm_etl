@@ -1,0 +1,11 @@
+▶opesql.bat▶====================================================
+▶opesql.bat▶작업시작일시  : 2022-10-18 15:46:54
+기준일 : 20221017
+손실회계계정코드(G/L 계정 코드명) : LSS_ACG_ACCC
+손실회계계정코드 내용 UPDATE(TB_OR_OM_CODE) 32
+손실회계계정코드 건수 INSERT(TB_OR_OC_GLACC) 0
+
+PL/SQL procedure successfully completed.
+
+▶opesql.bat▶작업종료일시  : 2022-10-18 15:47:29
+▶opesql.bat▶====================================================

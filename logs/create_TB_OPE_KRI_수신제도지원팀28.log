@@ -1,0 +1,47 @@
+DROP TABLE OPEOWN.TB_OPE_KRI_수신제도지원팀28
+                  *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+
+Table created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Comment created.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+
+Grant succeeded.
+
+▶opesql.bat▶작업종료일시  : 2022-11-04 10:14:40
+▶opesql.bat▶RESULT:[0] =========================================

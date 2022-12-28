@@ -1,0 +1,13 @@
+/opeapp/cres/create_TB_OPE_KRI_수신제도지원팀23.sql
+/opeapp/sql/init/ins_TB_OPE_KRI_수신제도지원팀23.sql
+/opeapp/sql/chg/ins_TB_OPE_KRI_수신제도지원팀23.sql
+/opeapp/cres/create_TB_OPE_KRI_자금세탁방지팀06.sql
+/opeapp/sql/init/ins_TB_OPE_KRI_자금세탁방지팀06.sql
+/opeapp/sql/chg/ins_TB_OPE_KRI_자금세탁방지팀06.sql
+/opeapp/cres/create_TB_OPE_KRI_직원만족팀01.sql
+/opeapp/shell/chg/getfile_직원만족팀01.sh
+/opeapp/ctl/TB_OPE_KRI_직원만족팀01.ctl
+/opeapp/sql/chg/ins_TB_OPE_KRI_직원만족팀01.sql
+/opeapp/shell/chg/lod_TB_OPE_KRI_직원만족팀01.sh
+/opeapp/sql/chg/ins_TB_OPE_KRI_카드기획팀02.sql
+/opeapp/sql/init/ins_TB_OPE_KRI_카드기획팀02.sql

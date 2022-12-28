@@ -1,0 +1,11 @@
+▶bat▶====================================================
+▶bat▶작업시작일시  : 2022-11-29 09:21:59
+old  12:   WHERE   STD_DT = '&1';
+new  12:   WHERE   STD_DT = '20221031';
+0 rows deleted
+0 rows inserted
+
+PL/SQL procedure successfully completed.
+
+▶bat▶작업종료일시  : 2022-11-29 09:22:01
+▶bat▶====================================================

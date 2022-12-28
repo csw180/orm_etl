@@ -1,0 +1,4 @@
+create_ett.bat create_OPEETT_SP_DROP_TABLE.sql 
+create_ett.bat create_OPEETT_SP_INS_ETLLOG.sql
+create_ett.bat create_OPEETT_TB_OPE_KRI_ETLLOG.sql
+create_ett.bat create_OPEETT_TB_OPE_KRI_TABLES.sql

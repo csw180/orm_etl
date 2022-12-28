@@ -1,0 +1,9 @@
+#!/usr/bin/ksh
+
+# *-----------------------------------------------*
+# * Oracle접속정보(EDW)
+# *-----------------------------------------------*
+OPE_INSTANCE=DBDOPE
+OPE_PASSWORD=b3BlZXR0ITIyMDU=
+OPE_USER_ID=OPEETT
+

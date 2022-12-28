@@ -1,0 +1,13 @@
+LOAD DATA
+TRUNCATE
+INTO TABLE TEMP_OPE_KRI_ÀÚ±Ý¼¼Å¹¹æÁöÆÀ01
+FIELDS TERMINATED BY '|'
+TRAILING NULLCOLS
+(  STD_DT
+  ,BRNO
+  ,BR_NM                "TRIM(:BR_NM)"
+  ,CTR_NO               "TRIM(:CTR_NO)"
+  ,CTR_DT
+  ,CUST_NO
+  ,CTR_AMT
+)

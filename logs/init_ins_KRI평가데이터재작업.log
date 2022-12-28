@@ -1,0 +1,9 @@
+old  17:	 ,'&2'
+new  17:	 ,'202211'
+TB_OPE_DT_BC :기준일 : 20221208
+P_RUNDATE :기준일 : 20230116
+기준일 일치 평가데이터(수기지표) 생성을 시작합니다.
+25건 평가데이터 생성
+
+PL/SQL procedure successfully completed.
+

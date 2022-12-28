@@ -1,0 +1,7 @@
+old  12:   WHERE   STD_DT = '&1';
+new  12:   WHERE   STD_DT = '20220930';
+12163 rows deleted
+12163 rows inserted
+
+PL/SQL procedure successfully completed.
+
